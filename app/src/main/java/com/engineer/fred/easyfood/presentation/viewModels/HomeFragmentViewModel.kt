@@ -64,7 +64,7 @@ class HomeFragmentViewModel @Inject constructor(
        }
     }
 
-    fun getRandomMeal() {
+    private fun getRandomMeal() {
             viewModelScope.launch(  Dispatchers.IO + errorHandler ) {
                 try {
                     val result = getRandomMealUseCase.invoke()

@@ -52,7 +52,6 @@ class HomeFragment : Fragment(), PopularMealsAdapter.ItemClick, MealCategoriesAd
     override fun onViewCreated(view : View , savedInstanceState : Bundle?) {
         super.onViewCreated(view , savedInstanceState)
 
-        homeVM.getRandomMeal()
         binding.recViewMealsPopular.adapter = popularMealsAdapter
         binding.recViewMealsPopular.layoutManager = LinearLayoutManager( requireActivity(), HORIZONTAL, false )
 
